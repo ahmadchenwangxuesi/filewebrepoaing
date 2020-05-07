@@ -1,0 +1,49 @@
+layout: stacked
+style: dark
+
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+
+projects:
+  sort_by: stars
+  sort_by options:
+    - stars
+    - pushed
+  limit: 9
+  exclude:
+    archived: true
+    forks: false
+    projects:
+      #- 
+
+social_media:
+  twitter: S0fianeHamlaoui
+  youtube: channel/UCCjypR-PBzkLJiZYy95HQIQ
+  facebook: S0fianeHamlaoui
+  linkedin: sofianehamlaoui
+  medium: SofianeHamlaoui
+  telegram: SofianeHamlaoui
+  website: https://sofianehamlaoui.me
+
+topics:
+  - name: Python
+    web_url: https://github.com/topics/python
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
+
+  - name: Cyber Security
+    web_url: https://github.com/topics/cyber-security
+
+  - name: Penetration Testing
+    web_url: https://github.com/topics/penetration-testing
